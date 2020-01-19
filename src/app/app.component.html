@@ -2,12 +2,20 @@
   <thead>
     <tr>
       <td>kanał</td>
+      <td>views</td>
+      <td>licks</td>
+      <td>dislicks</td>
+      <td>koms</td>
       <td>tytuł</td>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let video of videos">
       <td>{{video.channelTitle}}</td>
+      <td>{{video.views}}</td>
+      <td>{{video.licks}}</td>
+      <td>{{video.dislicks}}</td>
+      <td>{{video.koms}}</td>
       <td><a href='https://{{"youtube.com/watch?v="+video.id}}'>{{video.title}}</a></td>
     </tr>
   </tbody>
